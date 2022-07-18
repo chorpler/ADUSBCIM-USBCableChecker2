@@ -1,4 +1,4 @@
-![main](https://github.com/bit-trade-one/USBCableChecker2/blob/image/WP-%E8%A3%BD%E5%93%81%E3%83%88%E3%83%83%E3%83%97-MAIN.png)
+![main](./image/ADUSB_MAIN.eng.png)
 
 # USB CABLE CHECKER2 instruction manual
 
@@ -20,7 +20,7 @@ This product has the following functions.
 
 ## Explanation of each part
 
-![info](https://github.com/bit-trade-one/USBCableChecker2/blob/image/WP-%E8%A3%BD%E5%93%81%E3%83%88%E3%83%83%E3%83%97-SUB1.png)
+![info](./image/WP-PRODUCT-TOP-SUB1.eng)
 
 ## Before use: Notes
 
@@ -50,71 +50,71 @@ If the wire is connected, the LED corresponding to the "Connection" will light u
 
 - ** OLED display display part **
 
-If both the VBUS and GND ** ** of the cable connected to the side A and the B side are connected, the display of the total ** ** of the VBUS line and the GND line resistance value is displayed on the display.
-  
-When a type C plug with a built -in resistance is connected to the plug, the pred -up/pull -down resistance value connected to the CC and the maximum permissive current that is notified to the connection device according to it is displayed.
-  
-If the 10k pull-down resistance is detected, it is determined as a Marked cable.
+If both VBUS and GND of the cable connected to the A side and B side are connected, the total resistance value of the VBUS line and GND line resistance value will be displayed on the display.
+
+When a type C plug with a built-in resistor is connected inside the plug, the value of the pull-up / pull-down resistor connected to the CC and the maximum allowable current value notified to the connected device corresponding to it are displayed.
+
+If a 10k pull-down resistor is detected, it is judged as a MARKED cable.
 
 ## OLED display display
 
 ### [Resistance value]
 
-The total resistance of the GND line and the VBUS line.
+The total resistance of the GND line and VBUS line.
 
-This includes USB plug-connector contact resistance.The unit is millimeters, and the accuracy is ± 15 %.
+This includes USB plug-connector contact resistance. The unit is milliohms (mΩ) and the accuracy is ±15%.
 
-The measurement limit is 1100mΩ, and more than that is displayed as "High".
+The measurement limit value is 1100 mΩ, and above that, "HIGH" is displayed.
 
-### [UP10K/Source 3.0a]
+### [UP10K / SOURCE 3.0A]
 
-Have a 10kΩ resistor connected between VBUS-CC in the C plug.
+It has a 10kΩ resistor connected between VBUS and CC in the C plug.
 
-The host recognizes the USB device as the 3A current supply capacity.
+Makes the USB device recognize that the host can supply a current of 3A.
 
-The cable with this resistance value in the plug is out of USB standard.
+Cables with resistance of this resistance value inside the plug are not USB standard.
 
-### [UP22K/Source 1.5a]
+### [UP22K / SOURCE 1.5A]
 
-Have a 22kΩ resistor connected between VBUS-CC in the C plug.
+It has a 22kΩ resistor connected between VBUS and CC in the C plug.
 
-The host recognizes the USB device as a 1.5A current supply capacity.
+Makes the USB device recognize that the host has a current supply capacity of 1.5A.
 
-The cable with this resistance value in the plug is out of USB standard.
+Cables with resistance of this resistance value inside the plug are not USB standard.
 
-### [UP56K/SOURCE 0.5A] 
+### [UP56K / SOURCE 0.5A]
 
-Have a 56kΩ resistor connected between VBUS-CC in the C plug.
+It has a 56kΩ resistor connected between VBUS and CC in the C plug.
 
-The host recognizes the USB device as a 0.5A current supply capacity.
+Makes the USB device recognize that the host has a current supply capacity of 0.5A.
 
-This is the only value of the built -in connector -built -up resistance allowed by the USB standard.
+This is the only pull-up resistor with a built-in connector that is permitted by the USB standard.
 
-### [DOWN1K/E-MARKED]
+### [DOWN1K / E-MARKED]
 
-Have a 1kΩ resistor connected between GND-VConn in the C plug.
+It has a 1kΩ resistor connected between GND and VCONN in the C plug.
 
-This will notify the connection destination USB device that it is a built -in e -marker IC cable.
+This notifies the connected USB device that it is a cable with a built-in E marker IC.
 
-### [DOWN5.1K/SINK 0.5A]
+### [DOWN5.1K / SINK 0.5A]
 
-Have a 5.1kΩ resistor connected between GND-CC in the C plug.
+It has a 5.1kΩ resistor connected between GND and CC in the C plug.
 
-As a result, the connection USB device works as a host if possible.
+This allows the connected USB device to act as a host if possible.
 
-### [OTG　ENABLE]
+### [OTG ENABLE]
 
-Although it is not a resistor, it lights up when the GND-ID terminal of the mini-b and micro-b connector is short.
+Although it is not a resistor, it lights up when the GND-ID terminals of the Mini-B and Micro-B connectors are short-circuited.
 
-As a result, the connection USB device works as a host if possible.
+This allows the connected USB device to act as a host if possible.
 
 ### [SHELL-GND SHORT(SIDE)]
 
-It is displayed when the plug shell is conducted with GND.In (), the connector on the controlled side represents either A, B.
+Displayed when the plug shell is connected to GND. The numbers in parentheses indicate whether the connector on the conducting side is A or B.
 
-If the connectors on both sides are conducted, it will be displayed as A & B.
+If the connectors on both sides are conducting, A & B is displayed.
 
-In the Type C-C cable, it is stipulated that the GND and the shell are connected by the standard.
+For type C-C cables, the standard stipulates that GND and the shell are connected.
 
 ### [SHIELD CONNECT]
 
@@ -124,7 +124,7 @@ Normally, the shielding wire of the legacy USB cable is only connected to one of
 
 ## Weird cable (Strange cable) mode
 
-![img](./image/weird_cable_mode_example.png)
+![img](./image/weird_cable_mode_example.eng.png)
 
 If multiple CC pull-up or pull-down resistors on a cable or plug are detected, the display will look different than usual.
 
@@ -134,7 +134,7 @@ The status of the terminals of all CCs on the A side and B side is listed. This 
 
 ## Commentary on the wire connection confirmation LED
 
-![img](./image/ADUSBCIM_LED.png)
+![img](./image/ADUSBCIM_LED.eng.png)
 
 ### [3.2]　
 
