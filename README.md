@@ -1,186 +1,185 @@
 ![main](https://github.com/bit-trade-one/USBCableChecker2/blob/image/WP-%E8%A3%BD%E5%93%81%E3%83%88%E3%83%83%E3%83%97-MAIN.png)
 
-# USB CABLE CHECKER2 取扱説明書
+# USB CABLE CHECKER2 instruction manual
 
-## 機能紹介
+## Function introduction
 
-本製品には下記の機能があります。
-
-------
-
-- USBケーブルのワイヤの結線状況のチェック
-
-- タイプCプラグが持つ内蔵抵抗値の確認(PD用E Markerの有無)
-
-- 電源線の抵抗値の確認
-
-- プラグシェルの地絡確認
+This product has the following functions.
 
 ------
 
-## 各部の説明
+- USB Check the wire wires of the cable
+
+- Confirm the internal resistance value of the type C plug (whether or not the E Marker for PD)
+
+- Confirmation of the resistance value of the power line
+
+- Plug shell grounds confirmation
+
+------
+
+## Explanation of each part
 
 ![info](https://github.com/bit-trade-one/USBCableChecker2/blob/image/WP-%E8%A3%BD%E5%93%81%E3%83%88%E3%83%83%E3%83%97-SUB1.png)
 
-## ご使用の前に・注意事項
+## Before use: Notes
 
-購入時、USBCableChecker2には動作確認用の電池が取り付けられています。  
+At the time of purchase, USBCABLECHECKER2 has a battery for operation confirmation.
 
-絶縁用のシールが本体との間に挟まっていますので、取り除いてから使用してください。
+The insulation sticker is sandwiched between the main unit, so please remove it before use.
 
-また、基板をアクリルで保護しておりますがコネクタ等がむき出しになっている為、取扱いにはご注意下さい。
+In addition, the board is protected by acrylic, but please be careful when handling because the connector etc. are exposed.
 
-**本製品はケーブル検査専用デバイスです。他のUSBデバイスを接続しないでください。破損の危険があります。**
+** This product is a device dedicated to cable inspection. Do not connect other USB devices. There is a danger of damage.**
 
-## 使用方法
+## How to use
 
-- **プラグ変換アダプタの判定**
+- ** Judgment of plug conversion adapter **
 
-本製品の電源をONにしてから、A側のコネクタとB側のコネクタどちらかに変換アダプタを接続します。
+After turning on the power of this product, connect the conversion adapter to either the connector on the A side or the connector on the B side.
 
-タイプCプラグの変換コネクタでCCに接続された内蔵抵抗があればOLEDディスプレイに抵抗値が表示されます。
+If there is an internal resistance connected to the CC with a type C plug conversion connector, the resistance value is displayed on the OLED display.
 
-OTG機能があるアダプタなら「OTG ENABLE」と表示されます。
+If you have an OTG function, it will be displayed as "OTG Enable".
 
-- **ケーブルの判定**
+- ** Cable judgment **
 
-本製品の電源をONにしてから、A側のコネクタとB側のコネクタをUSBケーブルで繋ぎます。
+After turning on the power of this product, connect the connector on the A side and the connector on the B side with a USB cable.
 
-ワイヤが結線されていれば「CONNECTION」の所に対応したLEDが点灯します。
+If the wire is connected, the LED corresponding to the "Connection" will light up.
 
-- **OLEDディスプレイ表示部**
+- ** OLED display display part **
 
-A側とB側に繋いだケーブルのVBUSとGNDの**両方**が結線されていれば、ディスプレイにVBUS線とGND線抵抗値の**合計**の抵抗値が表示されます。
+If both the VBUS and GND ** ** of the cable connected to the side A and the B side are connected, the display of the total ** ** of the VBUS line and the GND line resistance value is displayed on the display.
   
-プラグ内に抵抗を内蔵したタイプCプラグを接続すると、CCに接続されたプルアップ/プルダウン抵抗の値とそれに応じた接続機器に通知される最大許容電流値が表示されます。
+When a type C plug with a built -in resistance is connected to the plug, the pred -up/pull -down resistance value connected to the CC and the maximum permissive current that is notified to the connection device according to it is displayed.
   
-10kプルダウン抵抗を検知した場合はMARKEDケーブルと判定します。
+If the 10k pull-down resistance is detected, it is determined as a Marked cable.
 
-## OLEDディスプレイ表示の解説
+## OLED display display
 
-### [抵抗値]
+### [Resistance value]
 
-GND線とVBUS線合計の抵抗値です。
+The total resistance of the GND line and the VBUS line.
 
-これにはUSBプラグ-コネクタ間接触抵抗が含まれます。単位はミリΩ、精度は±15％です。
+This includes USB plug-connector contact resistance.The unit is millimeters, and the accuracy is ± 15 %.
 
-測定限界値は1100mΩで、それ以上は「HIGH」と表示されます。  
+The measurement limit is 1100mΩ, and more than that is displayed as "High".
 
-### [UP10K/SOURCE 3.0A]
+### [UP10K/Source 3.0a]
 
-Cプラグ内にVBUS-CC間に接続された10kΩの抵抗器を持ちます。
+Have a 10kΩ resistor connected between VBUS-CC in the C plug.
 
-USBデバイスにホストが3Aの電流供給能力があるものとして認識させます。
+The host recognizes the USB device as the 3A current supply capacity.
 
-この抵抗値の抵抗をプラグ内に持つケーブルはUSB規格外です。
+The cable with this resistance value in the plug is out of USB standard.
 
-### [UP22K/SOURCE 1.5A]
+### [UP22K/Source 1.5a]
 
-Cプラグ内にVBUS-CC間に接続された22kΩの抵抗器を持ちます。
+Have a 22kΩ resistor connected between VBUS-CC in the C plug.
 
-USBデバイスにホストが1.5Aの電流供給能力があるものとして認識させます。
+The host recognizes the USB device as a 1.5A current supply capacity.
 
-この抵抗値の抵抗をプラグ内に持つケーブルはUSB規格外です。  
+The cable with this resistance value in the plug is out of USB standard.
 
 ### [UP56K/SOURCE 0.5A] 
 
-Cプラグ内にVBUS-CC間に接続された56kΩの抵抗器を持ちます。
+Have a 56kΩ resistor connected between VBUS-CC in the C plug.
 
-USBデバイスにホストが0.5Aの電流供給能力があるものとして認識させます。
+The host recognizes the USB device as a 0.5A current supply capacity.
 
-USB規格で許可されたコネクタ内蔵プルアップ抵抗はこの値のみです。
+This is the only value of the built -in connector -built -up resistance allowed by the USB standard.
 
 ### [DOWN1K/E-MARKED]
 
-Cプラグ内にGND-VCONN間に接続された1kΩの抵抗器を持ちます。
+Have a 1kΩ resistor connected between GND-VConn in the C plug.
 
-これにより接続先USB機器にEマーカーIC内蔵ケーブルということを通知します。  
+This will notify the connection destination USB device that it is a built -in e -marker IC cable.
 
 ### [DOWN5.1K/SINK 0.5A]
 
-Cプラグ内にGND-CC間に接続された5.1kΩの抵抗器を持ちます。
+Have a 5.1kΩ resistor connected between GND-CC in the C plug.
 
-これにより接続先USB機器は可能であればホストとして動作します。  
+As a result, the connection USB device works as a host if possible.
 
 ### [OTG　ENABLE]
 
-抵抗器ではありませんが、Mini-B、Micro-BコネクタのGND-ID端子間がショートしていると点灯します。
+Although it is not a resistor, it lights up when the GND-ID terminal of the mini-b and micro-b connector is short.
 
-これにより接続先USB機器は可能であればホストとして動作します。  
+As a result, the connection USB device works as a host if possible.
 
 ### [SHELL-GND SHORT(SIDE)]
 
-プラグシェルがGNDと導通している場合表示されます。()内は導通している側のコネクタがA,Bどちらかを表します。
+It is displayed when the plug shell is conducted with GND.In (), the connector on the controlled side represents either A, B.
 
-両側のコネクタが導通している場合はA&Bと表示されます。
+If the connectors on both sides are conducted, it will be displayed as A & B.
 
-なお、タイプC-Cケーブルでは規格でGNDとシェルが接続されることが定められています。 
+In the Type C-C cable, it is stipulated that the GND and the shell are connected by the standard.
 
 ### [SHIELD CONNECT]
 
-両端のシェルがGNDとは独立したワイヤで接続されている場合「SHIELD CONNECT」と表示されます。
+"SHIELD CONNECT" is displayed when the shells at both ends are connected by a wire independent of GND.
 
-なお、通常レガシーUSBケーブルのシールド線は通常はどちらか片方のプラグにだけ接続され、プラグ間導通はありません。  
+Normally, the shielding wire of the legacy USB cable is only connected to one of the ends, and there is no continuity between the ends.
 
-## Weird cable(奇妙なケーブル)モード
+## Weird cable (Strange cable) mode
 
-![img](https://github.com/bit-trade-one/USBCableChecker2/blob/image/weird_cable_mode_example.png)
+![img](./image/weird_cable_mode_example.png)
 
-ケーブル、プラグに複数のCCプルアップまたはプルダウン抵抗を発見した場合、ディスプレイの表示は通常とは異なる
+If multiple CC pull-up or pull-down resistors on a cable or plug are detected, the display will look different than usual.
 
-表示モードに入ります。この表示モードでは抵抗値は小さく表示されシェルやシールドの状態は表示されなくなり、
+Enter display mode. In this display mode, the resistance value is displayed small, and the state of the shell and shield is no longer displayed.
 
-A側、B側すべてのCCの端子の状態を列挙します。この機能は表裏判別不能等のUSB規格に沿わないType-Cケーブルの発見に役立ちます。
+The status of the terminals of all CCs on the A side and B side is listed. This function is useful for finding Type-C cables that do not comply with the USB standard, such as being indistinguishable from the front and back.
 
-## ワイヤ接続確認LEDの解説
+## Commentary on the wire connection confirmation LED
 
-![img](https://github.com/bit-trade-one/USBCableChecker2/blob/image/ADUSBCIM_LED.png)
+![img](./image/ADUSBCIM_LED.png)
 
 ### [3.2]　
 
-USB3.2接続に用いられるワイヤです。差動線の名称はA側コネクタ側の端子名に準拠しています。  
+It is a wire used for USB3.2 connection. The name of the differential line conforms to the terminal name on the A side connector side.
 
 ### CC
 
-TypeCケーブルにおいて主にホスト、デバイスの識別やUSB PD通信に使用されるワイヤです。
+Wires used mainly for hosts and devices and USB PD communications in TypeC cables.
 
-様々な機能を「使用できるかどうか」がこのワイヤを通してデバイス間でやり取りされます。  
+Various functions are exchanged between devices through this wire.
 
 ### SBU
 
-Side Band UseとしてUSBデータ通信以外のデータ（音声や映像等）をやり取りする際に使用するワイヤです。
+It is a wire used to exchange data (audio, video, etc.) other than USB data communication as Side Band Use.
 
-主にオルタネートモードで利用されます。  
+It is mainly used in alternate mode.
 
-### TX1/2 及び RX1/2
+### TX1/2 as well as RX1/2
 
-USB3.0以降での 通信を行うワイヤです。
+It is a wire that performs communication with USB3.0 or later.
 
-USB3.0では2対のワイヤを使ったデータ通信（SuperSpeed /SS)を、
+In USB3.0, data communication (SUPERSPEED / SS) using 2 pairs of wires,
 
-USB3.2以降では4対のワイヤを使ったデータ通信（SuperSpeed+ / SS+)を行います。  
+For USB3.2 or later, we perform data communication (SuperSpeed+ / SS+) using 4 pairs of wires.
 
 ### [2.0]
 
-USB1.0~USB2.0接続に用いられるワイヤです。  
+A wire used for USB1.0 ~ USB2.0 connection.
 
 ### D
 
-USB2.0迄のデータ通信 （LowSpeed / Full Speed 及びHigh Speed）を行うために使われるワイヤです。  
+A wire used to perform data communication up to USB2.0 (Lowspeed / Full Speed and High Speed).
 
-### VBUS及びGND
+### VBUS and GND
 
-電源管理の為に使用するワイヤです。
+It is a wire used for power management.
 
-## 電池の交換方法
+## How to replace the battery
 
 ![swap](https://github.com/bit-trade-one/USBCableChecker2/blob/image/image4.jpg)
 
-起動時、OLEDディスプレイに「LOW BATTERY」と表示されたら電池の交換時期です。
+When starting up, when "Low Battery" is displayed on the OLED display, it is time to replace the battery.
 
-上記画像のようにマイナス端子と電池の隙間にマイナスドライバーの先を滑り込ませるようにしてテコの原理を利用して外します。
+As shown in the image above, remove the leverage principle by sliding the tip of the flathead screwdriver into the gap between the minus terminal and the battery.
 
-その後、新しいCR2032バッテリーのプラス側を上にして装着します。
+After that, attach the new CR2032 battery plus on the side.
 
-公式ページ http://bit-trade-one.co.jp/adusbcim
-
+Official page http://bit-trade-ne.co.jp/adusbcim

@@ -1,21 +1,21 @@
-# USB CABLE CHECKER 2 よくある質問
+# USB CABLE CHECKER 2 Frequently Asked Questions
 
-## Q: USB CABLE CHECKER 2を外部の機器に接続して測定することはできますか？
+## Q: USB CABLE CHECKER 2 Can be connected to an external device and measured?
 
-### A: できません。
-USB CABLE CHECKER2はUSBケーブルをチェックするための製品であり、他のデバイスに接続するものではございません。  
-USBケーブルは必ずUSB CABLE CHECKER2のAサイドとBサイドへ接続してください。  
-他のデバイスを接続することで最悪デバイスが壊れる可能性がございます。  
-
-----
-
-## Q: 変換コネクタ経由でも使用できますか？
-
-### A: 変換コネクタでの使用、不可能では無いと思われますが検証は行っておりません。
-コネクタ側の性能によっても結果が左右されることをご承知置きください。
+### A: No.
+The USB Cable Checker2 is a product for checking the USB cable and does not connect to other devices.
+Be sure to connect the USB cable to the USB Cable Checker2 A-side and B-side.
+Connecting other devices may break the tester irreparably.
 
 ----
 
-## Q: USB1世代の判別はできますか？
+## Q: Can it be used with a converter?
 
-### A: 1世代の判別はできません。
+### A: It seems that it is not impossible to use in the conversion connector, but we do not verify.
+Please be aware that the result is also affected by the performance on the connector side.
+
+----
+
+## Q: Is it possible to determine the USB1 generation?
+
+### A: USB 1.0 cannot be identified. Minimum is USB 2.0.

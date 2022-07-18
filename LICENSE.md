@@ -1,1 +1,1 @@
-ライセンス条項については[こちらのリンク](https://bit-trade-one.co.jp/adl/)をご覧ください。
+See [this link](https://bit-trade-nco.jp/adl/) for the license.
