@@ -20,7 +20,7 @@ This product has the following functions.
 
 ## Explanation of each part
 
-![info](./image/WP-PRODUCT-TOP-SUB1.eng)
+![info](./image/WP-PRODUCT-TOP-SUB1.eng.png)
 
 ## Before use: Notes
 
