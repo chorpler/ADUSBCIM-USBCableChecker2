@@ -20,7 +20,7 @@
 
 ## Before use: Notes
 
-At the time of purchase, USBCABLECHECKER2 has a battery for operation confirmation.
+At the time of purchase, USB CABLE CHECKER 2 has a battery for operation confirmation.
 
 The insulation sticker is sandwiched between the main unit, so please remove it before use.
 
